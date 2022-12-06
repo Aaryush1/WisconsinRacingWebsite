@@ -13,8 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const pages = ['About', 'Team', 'Cars', 'Documents', 'Sponsors'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout']; //Update
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> // Use SVG icon with logo
                     <Typography
                         variant="h6"
                         noWrap

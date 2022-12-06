@@ -2,20 +2,23 @@ import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
+import { getAnalytics } from "firebase/analytics";
+
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBruxUnBUvxLNOcYLgV_BnrUPB-2QD4utw",
-    authDomain: "blog-6a1ca.firebaseapp.com",
-    projectId: "blog-6a1ca",
-    storageBucket: "blog-6a1ca.appspot.com",
-    messagingSenderId: "926590569941",
-    appId: "1:926590569941:web:4de608eb0ab1f4a7f4c15c",
-    measurementId: "G-W5B0G0PL3X"
+    apiKey: "AIzaSyB12sRBSeyUny3HwvQlbM2vdnFmUUF4kPk",
+    authDomain: "wisconsinracingwebsite.firebaseapp.com",
+    projectId: "wisconsinracingwebsite",
+    storageBucket: "wisconsinracingwebsite.appspot.com",
+    messagingSenderId: "759125941322",
+    appId: "1:759125941322:web:45fb0ad9ec571ff9da1ab3",
+    measurementId: "G-QZQ0NQ8BKT"
 };
 
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
+    // const analytics = getAnalytics(app);
 }
 
 export const auth = firebase.auth();
