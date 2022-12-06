@@ -1,1 +1,2 @@
-This is a NextJS 13 website to update and replace 
+This is a new website build for UW-Madison Formula SAE. It'll eventually replace wisconsinracing.org.
+I decided to use NextJS 13 in typescript, with firebase as a backend and MUI for styling elements. 
