@@ -112,6 +112,7 @@ function ResponsiveAppBar() {
                         }}
                     >
                         <Image src={carLogo} alt="logo" />
+
                     </Typography>
                     <Box sx={{
                         flexGrow: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center',
