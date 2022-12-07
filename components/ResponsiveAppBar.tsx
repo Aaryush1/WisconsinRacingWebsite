@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
 import carLogo from '../public/cropped-car-logo-3-3-228x92.png';
 
-const pages = ['About', 'Team', 'Cars', 'Documents', 'Sponsors'];
+const pages = ['about', 'team', 'cars', 'documents', 'sponsors'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']; //Update
 
 function ResponsiveAppBar() {
