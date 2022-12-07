@@ -55,9 +55,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        <Tooltip title='Home' arrow>
-                            <Image src={carLogo} alt="logo" />
-                        </Tooltip>
+                        <Image src={carLogo} alt="WR Logo" title='Home' />
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -115,9 +113,7 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        <Tooltip title='Home' arrow>
-                            <Image src={carLogo} alt="logo" />
-                        </Tooltip>
+                        <Image src={carLogo} alt="logo" title='Home' />
 
                     </Typography>
                     <Box sx={{
