@@ -11,7 +11,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image';
 import carLogo from '../public/cropped-car-logo-3-3-228x92.png';
 
@@ -56,7 +55,9 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        <Image src={carLogo} alt="logo" />
+                        <Tooltip title='Home' arrow>
+                            <Image src={carLogo} alt="logo" />
+                        </Tooltip>
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -89,12 +90,15 @@ function ResponsiveAppBar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{ color: '#B32031' }}>
+                                    <Typography textAlign="center"><a href='./{page}'>{page}</a></Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
                     </Box>
+
+
+
                     <Typography
                         variant="h5"
                         noWrap
@@ -111,7 +115,9 @@ function ResponsiveAppBar() {
                             textDecoration: 'none',
                         }}
                     >
-                        <Image src={carLogo} alt="logo" />
+                        <Tooltip title='Home' arrow>
+                            <Image src={carLogo} alt="logo" />
+                        </Tooltip>
 
                     </Typography>
                     <Box sx={{
@@ -124,10 +130,12 @@ function ResponsiveAppBar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: '#B32031', display: 'flexbox' }}
                             >
-                                {page}
+                                <a href={page}>{page}</a>
                             </Button>
                         ))}
                     </Box>
+
+
 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
