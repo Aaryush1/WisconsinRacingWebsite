@@ -13,6 +13,7 @@ const lTheme = createTheme({
     },
     text: {
       primary: '#000000',
+      secondary: '#B32031'
     },
     background: {
       default: '#ffffff',
