@@ -1,6 +1,6 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import ResponsiveAppBar from '../components/ResponsiveAppBar';
+import ResponsiveAppBar from '@/components/ResponsiveAppBar';
 import { useTheme, createTheme, ThemeProvider } from '@mui/material/styles';
 
 const lTheme = createTheme({

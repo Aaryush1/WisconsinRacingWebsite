@@ -1,4 +1,4 @@
-export default function Team() {
+export default function Cars() {
     return (
         <div>
             <h1>Cars</h1>

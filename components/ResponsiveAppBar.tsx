@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
-import carLogo from '../public/cropped-car-logo-3-3-228x92.png';
+import carLogo from '@/public/cropped-car-logo-3-3-228x92.png';
 
 const pages = ['about', 'team', 'cars', 'documents', 'sponsors'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout']; //Update
