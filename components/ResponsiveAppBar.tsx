@@ -88,7 +88,7 @@ function ResponsiveAppBar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{ color: '#B32031' }}>
+                                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{ color: 'text.secondary' }}>
                                     <Typography textAlign="center"><a href={page}>{page.charAt(0).toUpperCase() + page.slice(1)}</a></Typography>
                                 </MenuItem>
                             ))}
@@ -124,7 +124,7 @@ function ResponsiveAppBar() {
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: '#B32031', display: 'flexbox' }}
+                                sx={{ my: 2, color: 'text.secondary', display: 'flexbox' }}
                             >
                                 <a href={page}>{page}</a>
                             </Button>

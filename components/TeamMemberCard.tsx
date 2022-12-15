@@ -8,6 +8,9 @@ import Collapse from '@mui/material/Collapse';
 import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { TeamLead } from '../pages/team';
+
+
 
 interface ExpandMoreProps extends IconButtonProps {
     expand: boolean;
@@ -24,12 +27,6 @@ const ExpandMore = styled((props: ExpandMoreProps) => {
     }),
 }));
 
-interface TeamLead {
-    name: string;
-    title: string;
-    image: string;
-    description: string;
-}
 export default function TeamMemberCard({ name, title, image, description }: TeamLead) {
     const [expanded, setExpanded] = React.useState(false);
 
@@ -41,7 +38,7 @@ export default function TeamMemberCard({ name, title, image, description }: Team
         <Card sx={{ maxWidth: 250 }}>
             <CardMedia
                 component="img"
-                height="250"
+                height="175"
                 image={image}
                 alt="Amir Shukle"
             />
