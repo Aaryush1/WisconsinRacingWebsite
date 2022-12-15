@@ -20,13 +20,13 @@ export default function Team() {
             <div className={styles.grid}>
                 <TeamMemberCard
                     name='Amir Shukle'
-                    title='Team Principle'
+                    title='Team Principal'
                     image='/amir.JPG'
                     description='I am a reliable, hardworking engineer and will bring invaluable experience on an internationally recognized racing team as well as three years of experience on a nationally ranked engineering team.' />
 
                 <TeamMemberCard2
                     name='Amir Shukle'
-                    title='Team Principle'
+                    title='Team Principal'
                     image='/amir.JPG'
                     description='I am a reliable, hardworking engineer and will bring invaluable experience on an internationally recognized racing team as well as three years of experience on a nationally ranked engineering team.' />
             </div>

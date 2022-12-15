@@ -11,7 +11,7 @@ import Grow from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 
 const style = {
-    position: 'absolute' as 'absolute',
+    position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
@@ -29,7 +29,7 @@ export default function TeamMemberCard2({ name, title, image, description }: Tea
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     return (
-        <Card sx={{ maxWidth: 250 }} onClick={handleOpen}>
+        <Card sx={{ maxWidth: 250 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -44,6 +44,10 @@ export default function TeamMemberCard2({ name, title, image, description }: Tea
                     <Typography variant="body2" color="text.primary">
                         {title}
                     </Typography>
+                    <br />
+                    <Typography variant="body2" color="text.secondary" onClick={handleOpen}>
+                        More Info
+                    </Typography>
                     <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title"
                         aria-describedby="modal-modal-description">
                         <Grow in={open}>
@@ -54,6 +58,13 @@ export default function TeamMemberCard2({ name, title, image, description }: Tea
                                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
                                     {description}
                                 </Typography>
+                                <br />
+                                <Button
+                                    variant='outlined'
+                                    color='secondary'
+                                    onClick={handleClose}
+                                >
+                                    Close</Button>
                             </Box>
                         </Grow  >
                     </Modal>
