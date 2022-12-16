@@ -32,6 +32,12 @@
       "@/lib/*": [
         "lib/*"
       ],
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/types/*": [
+        "types/*"
+      ],
     }
   },
   "include": [
