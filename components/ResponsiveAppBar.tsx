@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Image from 'next/image';
+import Link from 'next/link';
 import carLogo from '@/public/cropped-car-logo-3-3-228x92.png';
 
 const pages = ['about', 'team', 'cars', 'documents', 'sponsors'];
@@ -89,7 +90,12 @@ function ResponsiveAppBar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu} sx={{ color: 'text.secondary' }}>
-                                    <Typography textAlign="center"><Button href={page} color='secondary'>{page.charAt(0).toUpperCase() + page.slice(1)}</Button></Typography>
+                                    <Typography textAlign="center">
+                                        <Link href={page}>
+                                            <Button href={page} color='secondary'>{page.charAt(0).toUpperCase() + page.slice(1)}</Button>
+                                        </Link>
+                                    </Typography>
+
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -126,7 +132,9 @@ function ResponsiveAppBar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'text.secondary', display: 'flexbox' }}
                             >
-                                <Button href={page} color='secondary'>{page}</Button>
+                                <Link href={page}>
+                                    <Button href={page} color='secondary'>{page}</Button>
+                                </Link>
                             </Button>
                         ))}
                     </Box>
