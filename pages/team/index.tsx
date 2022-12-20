@@ -1,12 +1,18 @@
 import TeamMemberCard from '@/components/TeamMemberCard'
 import TeamMemberCard2 from '@/components/TeamMemberCard2'
-import styles from '@/styles/Home.module.css'
+import { Typography } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2';
+import Box from '@mui/material/Box';
 
 export default function Team() {
     return (
         <div>
-            <h1>Team</h1>
+            < br />
+            <Typography variant='h2' sx={{ px: 76 }}>
+                Our Team
+            </Typography>
+            <br />
+
             <Grid2 container spacing={4} textAlign='center' marginLeft={15}>
                 <Grid2 xs={4}>
                     <TeamMemberCard
