@@ -55,6 +55,10 @@ export default function TeamMemberCard2(props: TeamLead) {
                         {title}
                     </Typography>
                     <br />
+                    {linkedIn && <Link target='_blank' href={linkedIn}><LinkedInIcon /></Link>}
+                    {github && <Link target='_blank' href={github}><GitHubIcon /></Link>}
+                    {instagram && <Link target='_blank' href={instagram}><InstagramIcon /></Link>}
+                    {twitter && <Link target='_blank' href={twitter}><TwitterIcon /></Link>}
                     <Backdrop sx={{ zIndex: (theme: any) => theme.zIndex.drawer + 1 }}
                         open={open}
                         onClick={handleClose}>
@@ -84,7 +88,6 @@ export default function TeamMemberCard2(props: TeamLead) {
                                         {github && <Link target='_blank' href={github}><GitHubIcon /></Link>}
                                         {instagram && <Link target='_blank' href={instagram}><InstagramIcon /></Link>}
                                         {twitter && <Link target='_blank' href={twitter}><TwitterIcon /></Link>}
-                                        <br />
                                     </Grid2>
                                 </Grid2>
                             </Box>
