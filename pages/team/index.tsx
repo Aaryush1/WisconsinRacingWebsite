@@ -1,28 +1,17 @@
-import TeamMemberCard from '@/components/TeamMemberCard'
 import TeamMemberCard2 from '@/components/TeamMemberCard2'
 import { Typography } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2';
-import Box from '@mui/material/Box';
 
 export default function Team() {
     return (
         <div>
             < br />
-            <Typography variant='h2' sx={{ px: 76 }}>
-                Our Team
+            <Typography variant='h2' sx={{ px: 70, fontFamily: 'Roboto' }}>
+                Meet the Team
             </Typography>
             <br />
 
             <Grid2 container spacing={4} textAlign='center' marginLeft={15}>
-                <Grid2 xs={4}>
-                    <TeamMemberCard2
-                        name='Amir Shukle'
-                        title='Team Principal & Aerodynamics/Composites Lead'
-                        image={'/amir.JPG'}
-                        description='I am a reliable, hardworking engineer and will bring invaluable experience on an internationally recognized racing team as well as three years of experience on a nationally ranked engineering team.'
-                        linkedIn='https://www.linkedin.com/in/amir-shukle'
-                        github='https://github.com/Aaryush1/WisconsinRacingWebsite' />
-                </Grid2>
                 <Grid2 xs={4}>
                     <TeamMemberCard2
                         name='Isaac Hewett'
@@ -31,6 +20,17 @@ export default function Team() {
                         description='I am a committed, responsible, hard-working, dedicated problem-solver. I am excited about solving difficult engineering challenges that have never been solved before in a fast-paced environment. I particularly like working in a collaborative team environment where I can contribute and learn from my peers. I constantly try new things and pride myself on being innovative. I jump right in to figure things out.'
                         linkedIn='https://www.linkedin.com/in/amir-shukle'
                         github='https://github.com/Aaryush1/WisconsinRacingWebsite' />
+                </Grid2>
+                <Grid2 xs={4}>
+                    <TeamMemberCard2
+                        name='Amir Shukle'
+                        title='Team Principal & Aerodynamics/Composites Lead'
+                        image={'/amir.JPG'}
+                        description='I am a reliable, hardworking engineer and will bring invaluable experience on an internationally recognized racing team as well as three years of experience on a nationally ranked engineering team.'
+                        linkedIn='https://www.linkedin.com/in/amir-shukle'
+                        github='https://github.com/Aaryush1/WisconsinRacingWebsite'
+                        instagram='https://www.instagram.com/wisconsinracing/'
+                        twitter='https://twitter.com/F1' />
                 </Grid2>
                 <Grid2 xs={4}>
                     <TeamMemberCard2
@@ -166,7 +166,7 @@ export default function Team() {
                     <TeamMemberCard2
                         name='Shrey Patel'
                         title='Controls Lead'
-                        image={'/shrey.JPG'}
+                        image={''}
                         description='Controls Lead'
                         linkedIn='https://www.linkedin.com/in/shrey-patel-a73989141/' />
                 </Grid2>

@@ -55,10 +55,10 @@ export default function TeamMemberCard2(props: TeamLead) {
                         {title}
                     </Typography>
                     <br />
-                    {linkedIn && <Link target='_blank' href={linkedIn}><LinkedInIcon /></Link>}
-                    {github && <Link target='_blank' href={github}><GitHubIcon /></Link>}
-                    {instagram && <Link target='_blank' href={instagram}><InstagramIcon /></Link>}
-                    {twitter && <Link target='_blank' href={twitter}><TwitterIcon /></Link>}
+                    {linkedIn && <Link target='_blank' href={linkedIn}><LinkedInIcon sx={{ fill: '#0072B1' }} /></Link>}
+                    {github && <Link target='_blank' href={github}><GitHubIcon sx={{ fill: '#171515' }} /></Link>}
+                    {instagram && <Link target='_blank' href={instagram}><InstagramIcon sx={{ fill: '#bc2a8d' }} /></Link>}
+                    {twitter && <Link target='_blank' href={twitter}><TwitterIcon sx={{ fill: '#1DA1F2' }} /></Link>}
                     <Backdrop sx={{ zIndex: (theme: any) => theme.zIndex.drawer + 1 }}
                         open={open}
                         onClick={handleClose}>
@@ -73,7 +73,7 @@ export default function TeamMemberCard2(props: TeamLead) {
                                             justifyContent: 'center',
                                             display: 'flex',
                                         }}>
-                                            <Image src={image} alt={name} fill style={{ marginLeft: '68%' }} />
+                                            <Image src={image} alt={name} fill style={{ marginLeft: '68%' }} loading='lazy' />
                                         </div>
                                     </Grid2>
                                     <Grid2>
@@ -84,10 +84,10 @@ export default function TeamMemberCard2(props: TeamLead) {
                                             {description}
                                         </Typography>
                                         <br />
-                                        {linkedIn && <Link target='_blank' href={linkedIn}><LinkedInIcon /></Link>}
-                                        {github && <Link target='_blank' href={github}><GitHubIcon /></Link>}
-                                        {instagram && <Link target='_blank' href={instagram}><InstagramIcon /></Link>}
-                                        {twitter && <Link target='_blank' href={twitter}><TwitterIcon /></Link>}
+                                        {linkedIn && <Link target='_blank' href={linkedIn}><LinkedInIcon sx={{ fill: '#0072b1' }} /></Link>}
+                                        {github && <Link target='_blank' href={github}><GitHubIcon sx={{ fill: '#171515' }} /></Link>}
+                                        {instagram && <Link target='_blank' href={instagram}><InstagramIcon sx={{ fill: '#bc2a8d' }} /></Link>}
+                                        {twitter && <Link target='_blank' href={twitter}><TwitterIcon sx={{ fill: '#1DA1F2' }} /></Link>}
                                     </Grid2>
                                 </Grid2>
                             </Box>
