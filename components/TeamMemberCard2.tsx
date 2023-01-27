@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import styles from '@/styles/Team.module.css';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { TeamLead } from '@/types/TeamLead';
+import { CarInfo } from '@/types/CarInfo';
 import Grow from '@mui/material/Grow';
 import Box from '@mui/material/Box';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -32,8 +32,8 @@ const style = {
 };
 
 //TODO: Fix modal image
-export default function TeamMemberCard2(props: TeamLead) {
-    const { name, image, title, description, linkedIn, twitter, github, instagram } = props;
+export default function TeamMemberCard2(cardInfo: TeamLead) {
+    const { name, image, title, description, linkedIn, twitter, github, instagram } = cardInfo;
     const [open, setOpen] = useState(false);
     const handleToggle = () => setOpen(!open);
     const handleClose = () => setOpen(false);
