@@ -1,6 +1,10 @@
 export interface CarInfo {
     year: number;
+    name: string;
+    image: string,
     weight: number;
     position: number;
-    speed: number;
+    description: string;
+    topSpeed?: number;
+    zeroToSixty?: number;
 }
