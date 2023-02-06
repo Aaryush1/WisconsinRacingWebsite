@@ -19,7 +19,7 @@ const style = {
 };
 
 export default function CarCard(carInfo: CarInfo) {
-    const { name, year, image, weight, position } = carInfo;
+    const { name, year, image, weight, position, ...details } = carInfo;
     const [open, setOpen] = useState(false);
     const handleToggle = () => setOpen(!open);
     const handleClose = () => setOpen(false);

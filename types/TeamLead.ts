@@ -1,4 +1,4 @@
-export interface TeamLead {
+export type TeamLead = {
     name: string;
     title: string;
     image: string;

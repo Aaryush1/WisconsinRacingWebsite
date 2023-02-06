@@ -1,8 +1,12 @@
+import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material"
+import CarCard from "@/components/CarCard"
+
 export default function Cars() {
     return (
         <div>
-            <h1>Cars</h1>
-            <p>This is the Cars page</p>
+            <Typography variant='h2'>
+                Our Cars
+            </Typography>
         </div>
     )
 }
