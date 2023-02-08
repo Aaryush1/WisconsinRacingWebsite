@@ -1,8 +1,8 @@
 export type SponsorInfo = {
     name: string;
-    logoImage: string;
+    logo: string;
     tier: "Diamond" | "Gold" | "Silver" | "Bronze";
-    description: string;
-    year: number;
+    description?: string;
+    year?: number;
     website: string;
 }

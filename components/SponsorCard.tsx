@@ -2,6 +2,7 @@ import { SponsorInfo } from "@/types/SponsorInfo";
 import { useState } from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, Typography, Backdrop } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SponsorCard(props: SponsorInfo) {
     const [open, setOpen] = useState(false);
@@ -10,14 +11,14 @@ export default function SponsorCard(props: SponsorInfo) {
 
 
 
-    const { name, tier, year, logoImage, website, description } = props;
+    const { name, tier, year, logo, website, description } = props;
     return (
         <Card sx={{ maxWidth: 250 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
                     height="175"
-                    image={logoImage}
+                    image={logo}
                     alt={name}
                 />
                 <CardContent>
@@ -37,7 +38,9 @@ export default function SponsorCard(props: SponsorInfo) {
                             justifyContent: 'center',
                             display: 'flex',
                         }}>
-                            <Image src={logoImage} alt={name} fill style={{ marginLeft: '68%' }} loading='lazy' />
+                            <Link href={website}>
+                                <Image src={logo} alt={name} fill style={{ marginLeft: '68%' }} loading='lazy' />
+                            </Link>
                         </div>
                         <Typography gutterBottom variant="h5" component="div">
                             {name}
